@@ -13,3 +13,33 @@ I want to build a python project which takes a yotube url & then extracts the au
 
 etc
 ```
+
+
+youtube-ai-notes/
+│
+├── pyproject.toml        # managed by uv
+├── uv.lock               # exact dependency versions
+├── README.md
+│
+├── data/
+│   ├── audio/            # extracted mp3 files
+│   ├── transcripts/      # raw + translated transcripts
+│   └── outputs/          # final LLM-generated content
+│       ├── summary.md
+│       ├── notes.md
+│       ├── concepts.md
+│       └── diagrams.md
+│
+├── src/
+│   ├── __init__.py
+│
+│   ├── downloader.py     # YouTube → audio
+│   ├── transcriber.py    # Whisper transcription
+│   ├── translator.py     # Hindi → English logic
+│   ├── formatter.py      # timestamps, cleaning text
+│   ├── llm.py            # Ollama interface
+│   ├── generators.py     # summary, notes, concepts, diagrams
+│   └── main.py           # entry point
+│
+└── scripts/
+    └── run.sh             # optional CLI shortcut
