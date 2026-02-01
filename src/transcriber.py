@@ -12,7 +12,7 @@ def transcribe(audio_path: str) -> Tuple[List[Dict], str]:
 
     try:
         print("Transcribing (this may take a while)...")
-        result = model.transcribe(audio_path)
+        result = model.transcribe(audio_path, verbose=True)
         print("result", result["text"])
         # write to a text file or Json file
         with open("transcript.txt", "w") as f:
