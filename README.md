@@ -43,3 +43,7 @@ youtube-ai-notes/
 │
 └── scripts/
     └── run.sh             # optional CLI shortcut
+
+```bash
+uv run python -m src.main "https://www.youtube.com/watch?v=r6zFZQm0hcc"
+```

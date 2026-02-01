@@ -12,26 +12,12 @@ def transcribe(audio_path: str) -> Tuple[List[Dict], str]:
 
     try:
         print("Transcribing (this may take a while)...")
-        # task="translate" will turn Hindi (or any lang) into English
-        # Remove task="translate" if you want the original language
-        result = model.transcribe(audio_path, verbose=False)
-        
-        results = []
-        for segment in result['segments']:
-            results.append({
-                "start": segment['start'],
-                "end": segment['end'],
-                "text": segment['text'].strip()
-            })
-            # Optional: Print progress
-            print(f"[{segment['start']:.2f}s]: {segment['text'].strip()}")
-        
-        print("result", result)
-        detected_lang = result.get("language", "unknown")
-        print(f"Transcription completed. Language: {detected_lang}")
-        
-        return results, detected_lang
-
+        result = model.transcribe(audio_path)
+        print("result", result["text"])
+        # write to a text file or Json file
+        with open("transcript.txt", "w") as f:
+            f.write(result["text"])
+        return result["text"], result["language"]
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         return [], "unknown"

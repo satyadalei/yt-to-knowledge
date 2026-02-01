@@ -36,31 +36,31 @@ def main():
     
     print(f"🌍 Detected language: {language}")
     print("transcript", transcript)
-    if language == "hi":
-        print("🔄 Translating Hindi → English...")
-        transcript = translate_if_needed(str(audio_path), language)
+    # if language == "hi":
+    #     print("🔄 Translating Hindi → English...")
+    #     transcript = translate_if_needed(str(audio_path), language)
 
-    print("transcript", transcript)
-    print("Formatting transcript...")
-    formatted_text = format_transcript(transcript)
-    print("formatted_text", formatted_text)
+    # print("transcript", transcript)
+    # print("Formatting transcript...")
+    # formatted_text = format_transcript(transcript)
+    # print("formatted_text", formatted_text)
     
-    output_dir = Path("data/outputs")
-    output_dir.mkdir(parents=True, exist_ok=True)
+    # output_dir = Path("data/outputs")
+    # output_dir.mkdir(parents=True, exist_ok=True)
 
-    print("🧠 Generating summary...")
-    (output_dir / "summary.md").write_text(generate_summary(formatted_text))
+    # print("🧠 Generating summary...")
+    # (output_dir / "summary.md").write_text(generate_summary(formatted_text))
 
-    print("🧠 Generating key concepts...")
-    (output_dir / "concepts.md").write_text(generate_key_concepts(formatted_text))
+    # print("🧠 Generating key concepts...")
+    # (output_dir / "concepts.md").write_text(generate_key_concepts(formatted_text))
 
-    print("🧠 Generating notes...")
-    (output_dir / "notes.md").write_text(generate_notes(formatted_text))
+    # print("🧠 Generating notes...")
+    # (output_dir / "notes.md").write_text(generate_notes(formatted_text))
 
-    print("🧠 Generating diagram...")
-    (output_dir / "diagrams.md").write_text(generate_diagram(formatted_text))
+    # print("🧠 Generating diagram...")
+    # (output_dir / "diagrams.md").write_text(generate_diagram(formatted_text))
 
-    print("✅ Done! Check data/outputs/")
+    # print("✅ Done! Check data/outputs/")
 
 
 if __name__ == "__main__":
