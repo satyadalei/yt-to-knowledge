@@ -8,4 +8,12 @@ dependencies = [
     "ollama>=0.6.1",
     "openai-whisper>=20250625",
     "yt-dlp>=2026.1.29",
+    "torch>=2.1.0",  # Required for models; uv will pick CUDA if available
+    "torchaudio>=2.1.0",
+    "transformers>=4.45.0",
+    "datasets>=2.20.0",  # For audio loading/resampling
+    "accelerate>=0.33.0",  # Optimizes model loading/inference
+    "sentencepiece>=0.2.0",  # For IndicTrans2 tokenizer
+    "ffmpeg-python>=0.2.0",  # Pure Python ffmpeg wrapper
+    "python-dotenv>=1.0.0",
 ]

@@ -47,3 +47,5 @@ youtube-ai-notes/
 ```bash
 uv run python -m src.main "https://www.youtube.com/watch?v=r6zFZQm0hcc"
 ```
+
+uv run python -m src.main "https://www.youtube.com/watch?v=iBnWHZmlIyY"

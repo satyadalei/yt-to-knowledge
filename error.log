@@ -1,0 +1,30 @@
+WARNING: [youtube] [jsc] Remote components challenge solver script (deno) and NPM package (deno) were skipped. These may be required to solve JS challenges. You can enable these downloads with  --remote-components ejs:github  (recommended) or  --remote-components ejs:npm , respectively. For more information and alternatives, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS
+WARNING: [youtube] iBnWHZmlIyY: n challenge solving failed: Some formats may be missing. Ensure you have a supported JavaScript runtime and challenge solver script distribution installed. Review any warnings presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS
+ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+[AVFilterGraph @ 0000027423cd6440] No option name near 'ar:16000'
+[AVFilterGraph @ 0000027423cd6440] Error parsing a filter description around: [s0];[s0]audio=ac:1[s1]
+[AVFilterGraph @ 0000027423cd6440] Error parsing filterchain '[0]audio=ar:16000[s0];[s0]audio=ac:1[s1]' around: [s0];[s0]audio=ac:1[s1]
+Error : Invalid argument
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\uv\python\cpython-3.10.19-windows-x86_64-none\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\LENOVO\AppData\Roaming\uv\python\cpython-3.10.19-windows-x86_64-none\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "E:\Programing stuffs\web developement\Projects\ai_projects\yt-to-knowledge\src\main.py", line 79, in <module>
+    main()
+  File "E:\Programing stuffs\web developement\Projects\ai_projects\yt-to-knowledge\src\main.py", line 41, in main
+    audio_path = mp3_to_wav(audio_path)
+  File "E:\Programing stuffs\web developement\Projects\ai_projects\yt-to-knowledge\src\app\mp3_to_wav.py", line 19, in mp3_to_wav
+    ffmpeg.run(stream, overwrite_output=True, quiet=False)
+  File "E:\Programing stuffs\web developement\Projects\ai_projects\yt-to-knowledge\.venv\lib\site-packages\ffmpeg\_run.py", line 325, in run
+    raise Error('ffmpeg', out, err)
+ffmpeg._run.Error: ffmpeg error (see stderr output for detail)
