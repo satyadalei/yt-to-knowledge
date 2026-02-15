@@ -16,4 +16,5 @@ dependencies = [
     "sentencepiece>=0.2.0",  # For IndicTrans2 tokenizer
     "ffmpeg-python>=0.2.0",  # Pure Python ffmpeg wrapper
     "python-dotenv>=1.0.0",
+    "youtube-transcript-api>=1.2.4",
 ]
